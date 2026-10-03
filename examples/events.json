@@ -1,0 +1,15 @@
+{
+  "events": [
+    {
+      "actor": "demo@example.com",
+      "ip": "10.0.0.7",
+      "Authorization": "Bearer synthetic-demo-value",
+      "action": "read"
+    },
+    {
+      "actor": "demo@example.com",
+      "api_key": "DEMO_ONLY_NOT_A_REAL_CREDENTIAL",
+      "message": "Email demo@example.com"
+    }
+  ]
+}
