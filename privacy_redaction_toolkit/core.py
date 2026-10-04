@@ -92,3 +92,12 @@ def write_redacted(source, target, salt_file=None):
     finally:
         temporary.unlink(missing_ok=True)
     return {"output": str(target), "replacements": result["replacements"]}
+
+
+def audit(document):
+    counts = redact(document)["replacements"]
+    return {
+        "recognized_exposures": sum(counts.values()),
+        "categories": counts,
+        "scope": "Configured keys and patterns only; manual review remains necessary",
+    }

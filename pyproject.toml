@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "privacy-redaction-toolkit"
-version = "1.0.0"
+version = "1.1.0"
 description = "Recursive structured-data redaction with auditable replacement counts"
 requires-python = ">=3.11"
 dependencies = []

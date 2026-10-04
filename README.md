@@ -36,3 +36,13 @@ Business algorithms live in `privacy_redaction_toolkit/core.py`; `privacy_redact
 Recognizes configured sensitive keys, emails, IPv4 addresses and common bearer/token forms. Pattern detection cannot guarantee removal of all personal information. Optional HMAC pseudonyms allow correlation; keep the salt private.
 
 This project demonstrates implemented engineering practices. It does not claim production deployment history or external certifications.
+
+## Privacy exposure audit
+
+Count recognized exposure categories without writing a redacted document or echoing source values. This is a scoped detector, not proof of anonymization.
+
+```sh
+python -m privacy_redaction_toolkit audit examples/events.json
+```
+
+Create the named input snapshots, databases or plan files first using the existing commands above.
